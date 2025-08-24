@@ -30,14 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenuPrincipal));
             flowLayoutPanel1 = new FlowLayoutPanel();
-            panel1 = new Panel();
             btnAdicionar = new Button();
             btnGerarSenha = new Button();
             btnExibir = new Button();
             btnConfig = new Button();
             btnSair = new Button();
+            panel1 = new Panel();
+            panel2 = new Panel();
+            pictureBox1 = new PictureBox();
             flowLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -52,14 +56,6 @@
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(206, 450);
             flowLayoutPanel1.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            panel1.Controls.Add(flowLayoutPanel1);
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(206, 450);
-            panel1.TabIndex = 1;
             // 
             // btnAdicionar
             // 
@@ -131,12 +127,40 @@
             btnSair.UseVisualStyleBackColor = false;
             btnSair.Click += btnSair_Click;
             // 
+            // panel1
+            // 
+            panel1.Controls.Add(flowLayoutPanel1);
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(206, 450);
+            panel1.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(pictureBox1);
+            panel2.Location = new Point(208, -5);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(594, 455);
+            panel2.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Dock = DockStyle.Fill;
+            pictureBox1.Image = Properties.Resources.Logo_Sem_Fundo;
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(594, 455);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            // 
             // frmMenuPrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(13, 27, 42);
             ClientSize = new Size(800, 450);
+            Controls.Add(panel2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -146,6 +170,8 @@
             Text = "GuardianPass";
             flowLayoutPanel1.ResumeLayout(false);
             panel1.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -158,5 +184,7 @@
         private Button btnExibir;
         private Button btnConfig;
         private Button btnSair;
+        private Panel panel2;
+        private PictureBox pictureBox1;
     }
 }

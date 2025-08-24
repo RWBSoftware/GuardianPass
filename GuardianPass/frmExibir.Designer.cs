@@ -100,6 +100,7 @@
             txtBoxUsuario.PlaceholderText = "Site/App";
             txtBoxUsuario.Size = new Size(165, 34);
             txtBoxUsuario.TabIndex = 24;
+            txtBoxUsuario.TextChanged += txtBoxUsuario_TextChanged;
             // 
             // label4
             // 

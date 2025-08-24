@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGerarSenha));
-            txtBoxSiteApp = new TextBox();
+            txtBoxSenha = new TextBox();
             label4 = new Label();
             btnVoltar = new Button();
             btnGerar = new Button();
@@ -38,21 +38,22 @@
             cBoxNumeros = new CheckBox();
             cBoxSimbolos = new CheckBox();
             nupQuantidade = new NumericUpDown();
+            btnCopiar = new Button();
             ((System.ComponentModel.ISupportInitialize)nupQuantidade).BeginInit();
             SuspendLayout();
             // 
-            // txtBoxSiteApp
+            // txtBoxSenha
             // 
-            txtBoxSiteApp.BackColor = Color.FromArgb(27, 38, 59);
-            txtBoxSiteApp.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtBoxSiteApp.ForeColor = Color.White;
-            txtBoxSiteApp.Location = new Point(76, 100);
-            txtBoxSiteApp.MaxLength = 50;
-            txtBoxSiteApp.Name = "txtBoxSiteApp";
-            txtBoxSiteApp.PlaceholderText = "Senha";
-            txtBoxSiteApp.ReadOnly = true;
-            txtBoxSiteApp.Size = new Size(218, 34);
-            txtBoxSiteApp.TabIndex = 25;
+            txtBoxSenha.BackColor = Color.FromArgb(27, 38, 59);
+            txtBoxSenha.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtBoxSenha.ForeColor = Color.White;
+            txtBoxSenha.Location = new Point(76, 100);
+            txtBoxSenha.MaxLength = 50;
+            txtBoxSenha.Name = "txtBoxSenha";
+            txtBoxSenha.PlaceholderText = "Senha";
+            txtBoxSenha.ReadOnly = true;
+            txtBoxSenha.Size = new Size(218, 34);
+            txtBoxSenha.TabIndex = 25;
             // 
             // label4
             // 
@@ -71,7 +72,7 @@
             btnVoltar.FlatAppearance.BorderSize = 0;
             btnVoltar.FlatStyle = FlatStyle.Flat;
             btnVoltar.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnVoltar.Location = new Point(143, 288);
+            btnVoltar.Location = new Point(143, 337);
             btnVoltar.Name = "btnVoltar";
             btnVoltar.Size = new Size(144, 43);
             btnVoltar.TabIndex = 23;
@@ -154,17 +155,32 @@
             nupQuantidade.TabIndex = 30;
             nupQuantidade.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
+            // btnCopiar
+            // 
+            btnCopiar.BackColor = Color.FromArgb(0, 180, 216);
+            btnCopiar.FlatAppearance.BorderSize = 0;
+            btnCopiar.FlatStyle = FlatStyle.Flat;
+            btnCopiar.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCopiar.Location = new Point(143, 288);
+            btnCopiar.Name = "btnCopiar";
+            btnCopiar.Size = new Size(144, 43);
+            btnCopiar.TabIndex = 31;
+            btnCopiar.Text = "COPIAR";
+            btnCopiar.UseVisualStyleBackColor = false;
+            btnCopiar.Click += btnCopiar_Click;
+            // 
             // frmGerarSenha
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(13, 27, 42);
-            ClientSize = new Size(430, 371);
+            ClientSize = new Size(430, 420);
+            Controls.Add(btnCopiar);
             Controls.Add(nupQuantidade);
             Controls.Add(cBoxSimbolos);
             Controls.Add(cBoxNumeros);
             Controls.Add(label1);
-            Controls.Add(txtBoxSiteApp);
+            Controls.Add(txtBoxSenha);
             Controls.Add(label4);
             Controls.Add(btnVoltar);
             Controls.Add(btnGerar);
@@ -181,7 +197,7 @@
         }
 
         #endregion
-        private TextBox txtBoxSiteApp;
+        private TextBox txtBoxSenha;
         private Label label4;
         private Button btnVoltar;
         private Button btnGerar;
@@ -190,5 +206,6 @@
         private CheckBox cBoxNumeros;
         private CheckBox cBoxSimbolos;
         private NumericUpDown nupQuantidade;
+        private Button btnCopiar;
     }
 }

@@ -12,8 +12,10 @@ namespace GuardianPass
 {
     public partial class frmExigirSenha : Form
     {
-        public frmExigirSenha()
+        DadosApp dadosApp = null;
+        public frmExigirSenha(DadosApp dadosApp)
         {
+            this.dadosApp = dadosApp;
             InitializeComponent();
         }
 
@@ -24,7 +26,20 @@ namespace GuardianPass
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-
+            DadosUsuario user = new DadosUsuario();
+            user = user.Carregar();
+            if (txtBoxSenha.Text == user.Senha)
+            {
+                frmAdicionar frmAdicionar = new frmAdicionar(dadosApp);
+                frmAdicionar.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Senha incorreta. Tente novamente.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtBoxSenha.Clear();
+                txtBoxSenha.Focus();
+            }
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)

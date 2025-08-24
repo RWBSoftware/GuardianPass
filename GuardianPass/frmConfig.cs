@@ -15,13 +15,42 @@ namespace GuardianPass
         public frmConfig()
         {
             InitializeComponent();
+            VerificarACorDoBotao();
         }
+
+        public void VerificarACorDoBotao()
+        {
+            DadosUsuario user = new DadosUsuario();
+            user = user.Carregar();
+            if (user.Exigir)
+            {
+                btnExigirSenha.BackColor = Color.FromArgb(0, 180, 216);
+            }
+            else
+            {
+                btnExigirSenha.BackColor = Color.LightGray;
+            }
+        }
+
 
         private void btnExigirSenha_Click(object sender, EventArgs e)
         {
-            frmExigirSenha frmExigirSenha = new frmExigirSenha();
-            frmExigirSenha.Show();
-            this.Close();
+            Conexao conexao = new Conexao();
+            DadosUsuario user = new DadosUsuario();
+            user = user.Carregar();
+            if (user.Exigir)
+            {
+                btnExigirSenha.BackColor = Color.LightGray;
+                user.Exigir = false;
+                conexao.AtualizarExigir(user);
+            }
+            else
+            {
+                btnExigirSenha.BackColor = Color.FromArgb(0, 180, 216);
+                user.Exigir = true;
+                conexao.AtualizarExigir(user);
+            }
+            user.Salvar(user);
         }
 
         private void btnTrocar_Click(object sender, EventArgs e)
@@ -33,7 +62,9 @@ namespace GuardianPass
 
         private void btnAlterar_Click(object sender, EventArgs e)
         {
-
+            frmAlterarSenha frmAlterarSenha = new frmAlterarSenha(new DadosUsuario().Carregar());
+            frmAlterarSenha.Show();
+            this.Close();
         }
 
         private void btnAvaliacao_Click(object sender, EventArgs e)

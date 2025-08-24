@@ -86,6 +86,7 @@
             // 
             txtBoxSenha.BackColor = Color.FromArgb(27, 38, 59);
             txtBoxSenha.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtBoxSenha.ForeColor = Color.White;
             txtBoxSenha.Location = new Point(101, 171);
             txtBoxSenha.MaxLength = 50;
             txtBoxSenha.Name = "txtBoxSenha";
@@ -109,6 +110,7 @@
             // 
             txtBoxUsuario.BackColor = Color.FromArgb(27, 38, 59);
             txtBoxUsuario.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtBoxUsuario.ForeColor = Color.White;
             txtBoxUsuario.Location = new Point(101, 100);
             txtBoxUsuario.MaxLength = 50;
             txtBoxUsuario.Name = "txtBoxUsuario";
@@ -142,6 +144,7 @@
             // 
             txtBoxSenhaNovamente.BackColor = Color.FromArgb(27, 38, 59);
             txtBoxSenhaNovamente.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtBoxSenhaNovamente.ForeColor = Color.White;
             txtBoxSenhaNovamente.Location = new Point(101, 242);
             txtBoxSenhaNovamente.MaxLength = 50;
             txtBoxSenhaNovamente.Name = "txtBoxSenhaNovamente";
