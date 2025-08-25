@@ -1,10 +1,3 @@
-Beleza Chefia 👊🔥
-Segui o mesmo **modelo que você mandou do Aptidão Militar Digital**, só que agora pro **GuardianPass**.
-
-Aqui está o README já no padrão:
-
----
-
 # 🔐 GuardianPass
 
 **GuardianPass** é um software desenvolvido para **armazenar, gerar e gerenciar senhas de forma prática e segura**.
