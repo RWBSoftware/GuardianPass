@@ -10,7 +10,7 @@ O sistema tem como objetivo **facilitar a vida dos usuários que precisam organi
 * 🏠 **Menu Inicial**
   Interface de entrada do sistema.
 
-<img width="350" height="408" alt="{A05C564A-0997-4C00-A88C-789FBE077A03}" src="https://github.com/user-attachments/assets/7a63d2fc-2281-4f60-b858-13bd068e237a" />
+  <img width="350" height="408" alt="{A05C564A-0997-4C00-A88C-789FBE077A03}" src="https://github.com/user-attachments/assets/7a63d2fc-2281-4f60-b858-13bd068e237a" />
 
 * 🔐 **Tela de Login**
   Autenticação segura para acesso dos usuários.
