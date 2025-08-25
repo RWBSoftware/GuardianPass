@@ -40,9 +40,13 @@
             // 
             // dgv1
             // 
+            dgv1.AllowUserToAddRows = false;
+            dgv1.AllowUserToDeleteRows = false;
+            dgv1.AllowUserToOrderColumns = true;
             dgv1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgv1.Location = new Point(0, -3);
             dgv1.Name = "dgv1";
+            dgv1.ReadOnly = true;
             dgv1.RowHeadersWidth = 51;
             dgv1.Size = new Size(596, 454);
             dgv1.TabIndex = 0;

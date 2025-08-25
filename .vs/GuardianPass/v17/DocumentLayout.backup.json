@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\kauac\\OneDrive\\Documentos\\Projetos\\GuardianPass\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5EED8947-EF00-473C-8A5A-47CC4C2E5AAA}|GuardianPass\\GuardianPass.csproj|c:\\users\\kauac\\onedrive\\documentos\\projetos\\guardianpass\\guardianpass\\frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5EED8947-EF00-473C-8A5A-47CC4C2E5AAA}|GuardianPass\\GuardianPass.csproj|solutionrelative:guardianpass\\frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5EED8947-EF00-473C-8A5A-47CC4C2E5AAA}|GuardianPass\\GuardianPass.csproj|c:\\users\\kauac\\onedrive\\documentos\\projetos\\guardianpass\\guardianpass\\frmexibir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EED8947-EF00-473C-8A5A-47CC4C2E5AAA}|GuardianPass\\GuardianPass.csproj|solutionrelative:guardianpass\\frmexibir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EED8947-EF00-473C-8A5A-47CC4C2E5AAA}|GuardianPass\\GuardianPass.csproj|c:\\users\\kauac\\onedrive\\documentos\\projetos\\guardianpass\\guardianpass\\frmexibir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5EED8947-EF00-473C-8A5A-47CC4C2E5AAA}|GuardianPass\\GuardianPass.csproj|solutionrelative:guardianpass\\frmexibir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EED8947-EF00-473C-8A5A-47CC4C2E5AAA}|GuardianPass\\GuardianPass.csproj|c:\\users\\kauac\\onedrive\\documentos\\projetos\\guardianpass\\guardianpass\\dadosusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EED8947-EF00-473C-8A5A-47CC4C2E5AAA}|GuardianPass\\GuardianPass.csproj|solutionrelative:guardianpass\\dadosusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EED8947-EF00-473C-8A5A-47CC4C2E5AAA}|GuardianPass\\GuardianPass.csproj|c:\\users\\kauac\\onedrive\\documentos\\projetos\\guardianpass\\guardianpass\\conexaoapps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EED8947-EF00-473C-8A5A-47CC4C2E5AAA}|GuardianPass\\GuardianPass.csproj|solutionrelative:guardianpass\\conexaoapps.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,14 +43,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmMenuPrincipal.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\kauac\\OneDrive\\Documentos\\Projetos\\GuardianPass\\GuardianPass\\frmMenuPrincipal.cs",
-              "RelativeDocumentMoniker": "GuardianPass\\frmMenuPrincipal.cs",
-              "ToolTip": "C:\\Users\\kauac\\OneDrive\\Documentos\\Projetos\\GuardianPass\\GuardianPass\\frmMenuPrincipal.cs [Projeto]",
-              "RelativeToolTip": "GuardianPass\\frmMenuPrincipal.cs [Projeto]",
+              "Title": "frmExibir.cs",
+              "DocumentMoniker": "C:\\Users\\kauac\\OneDrive\\Documentos\\Projetos\\GuardianPass\\GuardianPass\\frmExibir.cs",
+              "RelativeDocumentMoniker": "GuardianPass\\frmExibir.cs",
+              "ToolTip": "C:\\Users\\kauac\\OneDrive\\Documentos\\Projetos\\GuardianPass\\GuardianPass\\frmExibir.cs",
+              "RelativeToolTip": "GuardianPass\\frmExibir.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAAAEUAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-24T04:00:05.533Z",
+              "WhenOpened": "2025-08-24T23:30:06.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmExibir.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\kauac\\OneDrive\\Documentos\\Projetos\\GuardianPass\\GuardianPass\\frmExibir.cs",
+              "RelativeDocumentMoniker": "GuardianPass\\frmExibir.cs",
+              "ToolTip": "C:\\Users\\kauac\\OneDrive\\Documentos\\Projetos\\GuardianPass\\GuardianPass\\frmExibir.cs [Projeto]",
+              "RelativeToolTip": "GuardianPass\\frmExibir.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T23:29:06.919Z",
               "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ConexaoApps.cs",
+              "DocumentMoniker": "C:\\Users\\kauac\\OneDrive\\Documentos\\Projetos\\GuardianPass\\GuardianPass\\ConexaoApps.cs",
+              "RelativeDocumentMoniker": "GuardianPass\\ConexaoApps.cs",
+              "ToolTip": "C:\\Users\\kauac\\OneDrive\\Documentos\\Projetos\\GuardianPass\\GuardianPass\\ConexaoApps.cs",
+              "RelativeToolTip": "GuardianPass\\ConexaoApps.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA/wBcAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T23:16:34.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DadosUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\kauac\\OneDrive\\Documentos\\Projetos\\GuardianPass\\GuardianPass\\DadosUsuario.cs",
+              "RelativeDocumentMoniker": "GuardianPass\\DadosUsuario.cs",
+              "ToolTip": "C:\\Users\\kauac\\OneDrive\\Documentos\\Projetos\\GuardianPass\\GuardianPass\\DadosUsuario.cs",
+              "RelativeToolTip": "GuardianPass\\DadosUsuario.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAuwCAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T22:59:10.205Z",
+              "EditorCaption": ""
             }
           ]
         }

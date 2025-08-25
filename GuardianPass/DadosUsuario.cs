@@ -16,16 +16,33 @@ namespace GuardianPass
 
         public void Salvar(DadosUsuario user)
         {
+            string pasta = Path.Combine(
+                Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+                "GuardianPass"
+            );
+
+            if (!Directory.Exists(pasta))
+                Directory.CreateDirectory(pasta);
+
+            string caminhoArquivo = Path.Combine(pasta, "usuarios.json");
+
             string json = JsonSerializer.Serialize(user);
-            File.WriteAllText("usuarios.json", json);
+            File.WriteAllText(caminhoArquivo, json);
         }
 
         public DadosUsuario Carregar()
         {
-            if(!File.Exists("usuarios.json"))
+            string pasta = Path.Combine(
+                Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+                "GuardianPass"
+            );
+
+            string caminhoArquivo = Path.Combine(pasta, "usuarios.json");
+
+            if (!File.Exists(caminhoArquivo))
                 return new DadosUsuario();
 
-            string json = File.ReadAllText("usuarios.json");
+            string json = File.ReadAllText(caminhoArquivo);
             return JsonSerializer.Deserialize<DadosUsuario>(json) ?? new DadosUsuario();
         }
 

@@ -67,36 +67,39 @@ namespace GuardianPass
         private void btnEditar_Click(object sender, EventArgs e)
         {
 
-            if (dgv1.SelectedRows.Count == 0)
+            if (dgv1.SelectedRows.Count > 0)
+            {
+                var row = (dgv1.SelectedRows[0].DataBoundItem as DataRowView).Row;
+
+                DadosApp dadosApp = new DadosApp
+                {
+                    Usuario = row["Usuario"].ToString(),
+                    Senha = row["Senha"].ToString(),
+                    SiteApp = row["Site"].ToString()
+                };
+
+
+                DadosUsuario user = new DadosUsuario();
+                user = user.Carregar();
+                if (user.Exigir)
+                {
+                    frmExigirSenha frmExigirSenha = new frmExigirSenha(dadosApp);
+                    frmExigirSenha.Show();
+                    this.Close();
+                }
+                else
+                {
+                    frmAdicionar frmAdicionar = new frmAdicionar(dadosApp);
+                    frmAdicionar.Show();
+                    this.Close();
+                }
+            }
+            else
             {
                 MessageBox.Show("Selecione uma linha para editar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            var row = (dgv1.SelectedRows[0].DataBoundItem as DataRowView).Row;
-
-            DadosApp dadosApp = new DadosApp
-            {
-                Usuario = row["Usuario"].ToString(),
-                Senha = row["Senha"].ToString(),
-                SiteApp = row["Site"].ToString()
-            };
-
-
-            DadosUsuario user = new DadosUsuario();
-            user = user.Carregar();
-            if (user.Exigir)
-            {
-                frmExigirSenha frmExigirSenha = new frmExigirSenha(dadosApp);
-                frmExigirSenha.Show();
-                this.Close();
-            }
-            else
-            {
-                frmAdicionar frmAdicionar = new frmAdicionar(dadosApp);
-                frmAdicionar.Show();
-                this.Close();
-            }
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
